@@ -5,7 +5,8 @@ sudo: required
 script:
   - pwd
   - whoami
-  - ls ~/.ccache || wget -O ~/ccache.cache.tar.gz https://github.com/puteulanus/flippy-kernel-build/releases/download/5.18.15_ccache/ccache.cache.tar.gz && tar zxf ~/ccache.cache.tar.gz -C ~/
+  - wget -O ~/ccache.cache.tar.gz https://github.com/puteulanus/flippy-kernel-build/releases/download/5.18.15_ccache/ccache.cache.tar.gz
+  - tar zxf ~/ccache.cache.tar.gz -C ~/
   - ls ~/.ccache
   - git clone https://github.com/armbian/build
   - cd build
