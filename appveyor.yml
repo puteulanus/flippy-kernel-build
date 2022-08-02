@@ -4,7 +4,15 @@ image:
 platform:
   - x64
 
+environment:
+  APPVEYOR_SAVE_CACHE_ON_ERROR: true
+
+cache:
+  - ~/.ccache
+
 build_script:
+  - pwd
+  - whoami
   - git clone https://github.com/armbian/build
   - cd build
   - sed -i 's#git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git#https://github.com/puteulanus/linux-5.18.y#' lib/configuration.sh
