@@ -13,7 +13,7 @@ cache:
 build_script:
   - pwd
   - whoami
-  - ls ~/.ccache || wget -O /tmp/ccache.cache.tar.gz https://github.com/puteulanus/flippy-kernel-build/releases/download/5.18.15_ccache/ccache.cache.tar.gz && tar zxf ~/ccache.cache.tar.gz -C ~/
+  - ls ~/.ccache || wget -O /tmp/ccache.cache.tar.gz https://github.com/puteulanus/flippy-kernel-build/releases/download/5.18.15_ccache/ccache.cache.tar.gz && tar zxf /tmp/ccache.cache.tar.gz -C ~/
   - sudo apt-get update
   - sudo apt-get remove -y azure-cli aspnetcore* dotnet* erlang* firefox google-chrome-stable google-cloud-sdk mongodb* mysql* nuget rabbitmq-server virtualbox wireless-regdb linux-cloud-tools-common xserver-common linux-generic-hwe-18.04 mssql-tools msodbcsql17 virtualbox-6.1
   - git clone https://github.com/armbian/build
