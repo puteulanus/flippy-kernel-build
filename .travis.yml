@@ -9,7 +9,7 @@ script:
   - tar zxf ~/ccache.cache.tar.gz -C ~/
   - ls ~/.ccache
   - sudo apt-get update
-  - sudo apt-get remove -y erlang* mysql* wireless-regdb xserver-common xserver-xorg-core xvfb gce-compute-image-packages google-compute-engine-oslogin
+  - sudo apt-get remove -y erlang* mysql* wireless-regdb xserver-common xserver-xorg-core xvfb
   - git clone https://github.com/armbian/build
   - cd build
   - sed -i 's#git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git#https://github.com/puteulanus/linux-5.18.y#' lib/configuration.sh
