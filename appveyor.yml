@@ -14,8 +14,7 @@ build_script:
   - pwd
   - whoami
   - sudo apt-get update
-  - sudo apt-get remove -y azure-cli aspnetcore* dotnet* erlang* firefox google-chrome-stable google-cloud-sdk mongodb* mysql* nuget rabbitmq-server virtualbox wireless-regdb linux-cloud-tools-common xserver-common linux-generic-hwe-18.04
-  - sudo apt-get autoremove -y
+  - sudo apt-get remove -y azure-cli aspnetcore* dotnet* erlang* firefox google-chrome-stable google-cloud-sdk mongodb* mysql* nuget rabbitmq-server virtualbox wireless-regdb linux-cloud-tools-common xserver-common linux-generic-hwe-18.04 mssql-tools msodbcsql17 virtualbox-6.1
   - git clone https://github.com/armbian/build
   - cd build
   - sed -i 's#git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git#https://github.com/puteulanus/linux-5.18.y#' lib/configuration.sh
