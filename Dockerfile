@@ -1,6 +1,6 @@
 FROM ubuntu:20.04
 
-RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y -qq git wget acl uuid-runtime systemd sudo
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y -qq git wget acl uuid-runtime systemd sudo locales
 RUN git clone https://github.com/armbian/build && \
     cd build && \
     ./compile.sh BOARD=station-p2 BRANCH=current RELEASE=bullseye BUILD_MINIMAL=yes \
