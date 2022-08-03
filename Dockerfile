@@ -24,7 +24,7 @@ RUN cd /root && git clone https://github.com/armbian/build && cd build && \
     # 启动构建
     ./compile.sh BOARD=station-p2 BRANCH=current RELEASE=bullseye BUILD_MINIMAL=yes \
     BUILD_DESKTOP=no KERNEL_ONLY=no KERNEL_CONFIGURE=no COMPRESS_OUTPUTIMAGE=sha,gpg,img \
-    SKIP_BOOTSPLASH=yes AUFS=no EXTRAWIFI=no BUILD_KSRC=no KERNEL_KEEP_CONFIG=no
+    SKIP_BOOTSPLASH=yes AUFS=no EXTRAWIFI=no BUILD_KSRC=no KERNEL_KEEP_CONFIG=no  && \
     # 整理产物
     mkdir /root/output && \
     cp /tmp/armbianboot/{uInitrd-*,initrd.img-*} /tmp/boot && \
