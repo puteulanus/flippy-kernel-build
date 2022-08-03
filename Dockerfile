@@ -1,6 +1,6 @@
 FROM quay.io/puteulanus/flippy-kernel-build:cache as builder
 
-ADD kernel.config /root/kernel.config
+ADD kernel-config.txt /root/kernel.config
 
 RUN cd /root && git clone https://github.com/armbian/build && cd build && \
     # 修改内核源码为 Flippy 源码库
