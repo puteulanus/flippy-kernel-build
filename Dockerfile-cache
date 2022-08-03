@@ -1,6 +1,6 @@
 FROM ubuntu:20.04
 
-RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y -qq git wget acl uuid-runtime systemd sudo locales && apt-upgrade -qq -y && \
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y -qq git wget acl uuid-runtime systemd sudo locales && apt-get upgrade -qq -y && \
     cd /root && \
     git clone https://github.com/armbian/build && \
     cd build && \
