@@ -16,5 +16,5 @@ cd /tmp/modules/lib/modules
 tar zcvf modules-${filename:8}.tar.gz *
 cp modules-${filename:8}.tar.gz /tmp/output
 cd /tmp/output
-tar zcvf flippy-kernel.tar.gz
+tar zcvf flippy-kernel.tar.gz *
 cp flippy-kernel.tar.gz /notebooks
