@@ -1,7 +1,7 @@
 #!/bin/bash
 
 apt-get update
-DEBIAN_FRONTEND=noninteractive apt-get install -y -qq locales
+DEBIAN_FRONTEND=noninteractive apt-get install -y -qq locales psmisc acl uuid uuid-runtime gawk
 
 cd /root && git clone https://github.com/armbian/build
 cd build
